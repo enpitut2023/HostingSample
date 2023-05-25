@@ -3,7 +3,8 @@ FROM nginx:latest
 
 # Nginxの設定ファイルをコンテナ内にコピー
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY src /root/public
+COPY ./index.html /root/public/
+COPY ./img /root/public/img
 
 RUN mkdir /root/logs
 RUN chmod 755 -R /root
