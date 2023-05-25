@@ -1,8 +1,22 @@
+<!-- Reference: https://v2.tailwindcss.com/docs/responsive-design -->
+
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>sample</title>
     </head>
     <body>
-        <h1>Hello,  world</h1>
+        <div class="max-w-md mx-auto bg-sky rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="/img/gild.jpg">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-violet-500 font-semibold">Sample</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Introduce  Hosting Service (2 + 1) </a>
+                    <p class="mt-2 text-gray-500">GitHub Pages / Netlify / CloudRun</p>
+            </div>
+        </div>
     </body>
 </html>
